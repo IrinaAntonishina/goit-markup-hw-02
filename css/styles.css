@@ -1,21 +1,23 @@
 body {
-    font-family:'Ralewey', 'Roboto' sans-serif;
-    background-color: #FFFFFF;
+    font-family:'Ralewey', 'Roboto', sans-serif;
+    background-color: var(--backcolor-white);
+    color: var(--color-title);
 }
 
 :root {
     --color-title: #212121;
     --color-text: #757575;
     --backcolor-grey: #2F303A;
-    --color-hover-logo: #2196F3;
+    --color-accent: #2196F3;
     --text-white: #FFFFFF;
     --logo-header:#000000;
+    --back-color: #F5F4FA;
+    --backcolor-white: #FFFFFF;
 }
 
 /* --------------Header-------------- */
 .header-logo {
 font-family: 'Raleway';
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -25,7 +27,7 @@ text-decoration: none;
 }
 
 span {
-    color: var(--color-hover-logo);    
+    color: var(--color-accent);    
 }
 
 .list, .link {
@@ -34,7 +36,6 @@ span {
 }
 
 .header-item {
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -44,20 +45,19 @@ color: var(--color-title);
 
 .clarity:hover,
 .clarity:focus {
-    color: var(--color-hover-logo);
+    color: var(--color-accent);
 }
 
 .header-item:hover,
 .header-item:focus {
-    color: var(--color-hover-logo);
+    color: var(--color-accent);
 }
 .header-item-list:hover,
 .header-item-list:focus {
-    color: var(--color-hover-logo);
+    color: var(--color-accent);
 }
 
 .header-item-list {
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -73,7 +73,6 @@ color: var(--color-text);
     color: var(--text-white);
 }
 .btn {
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -82,23 +81,20 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: var(--text-white);
-background-color: #2196F3;
+background-color: var(--color-accent);
+cursor: pointer;
 }
 
 /* ---------------Feature---------------- */
 .feature-title {
-font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--color-title);
 }
 
 .feature-text {
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -108,13 +104,11 @@ color: var(--color-text);
 /* -------------Projects--------------- */
 
 .projects-title {
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--color-title);
 }
 
 .projects-item {
@@ -124,7 +118,7 @@ color: var(--color-title);
 /* -------------Team--------------- */
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--back-color);
 }
 .team-list {
     list-style: none;
@@ -132,9 +126,7 @@ color: var(--color-title);
  .team-link {
     background-color: #FFFFFF;
  }
- .team-member {
-    color: var(--color-title);
- }
+ 
  .team-text {
     color: var(--color-text);
  }
@@ -151,7 +143,6 @@ color: var(--color-title);
 
  .footer-logo {
 font-family: 'Raleway';
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -191,7 +182,6 @@ color: rgba(255, 255, 255, 0.6);
   }
 
 .portfolio-btn {
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
@@ -199,14 +189,13 @@ text-align: center;
 letter-spacing: 0.03em;
 background-color: #F5F4FA;
 cursor: pointer;
-color: var(--color-title);
 }
 
 .btn-item {
     list-style: none;
 }
 .portfolio-btn:hover {
-    background-color: var(--color-hover-logo);
+    background-color: var(--color-accent);
     color: var(--text-white);
 }
 .portfolio-list {
@@ -216,7 +205,6 @@ color: var(--color-title);
     text-decoration: none;
 }
 .portfolio-title { 
-font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
@@ -224,8 +212,6 @@ letter-spacing: 0.06em;
 color: var(--color-title);
 }
 .portfolio-text {
-font-style: normal;
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
