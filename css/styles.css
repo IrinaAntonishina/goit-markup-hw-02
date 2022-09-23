@@ -19,13 +19,46 @@ body {
 .container {
     width: 1200px;
     padding: 0px 15px;
-    outline: 2px solid red;
     margin: 0px auto;
     }
     
 
 /* --------------Header-------------- */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 344px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 50px; 
+  padding-left: 0px;
+}
+
+.header-list .item+.item {
+  margin-left: 50px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-logo {
+  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -51,6 +84,7 @@ span {
 .list {
     margin-top: 0;
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 
 .header-item {
@@ -59,11 +93,6 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-title);
-}
-
-.clarity:hover,
-.clarity:focus {
-  color: var(--color-accent);
 }
 
 .header-item:hover,
@@ -81,8 +110,6 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-text);
-
-
 }
 
 
@@ -90,11 +117,14 @@ span {
 /* -----------------Hero-------------- */
 
 .hero {
+  padding: 200px; 
   background-color: var(--backcolor-grey);
   text-align: center;
   margin-bottom: 94px;
 }
+
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -102,7 +132,8 @@ span {
   text-transform: uppercase;
   color: var(--text-white);
   margin-bottom: 30px;
-  margin-top: 0px;
+  margin-top: 0px; 
+  margin: 0px auto 30px auto;
 }
 
 .btn {
@@ -132,6 +163,11 @@ span {
     margin-bottom: 94px;
 }
 
+.feature-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -152,8 +188,11 @@ span {
 }
 
 .feature-list {
+    display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
+    justify-content: space-between;  
+    padding-left: 0px;
 }
 
 /* -------------Projects--------------- */
@@ -168,8 +207,15 @@ span {
   margin-bottom: 50px;
 }
 .projects-list {
+    display: flex ; 
     margin-top: 0px;
     margin-bottom: 94px;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+
+.projects-item {
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 /* -------------Team--------------- */
@@ -261,6 +307,11 @@ span {
   color: var(--color-accent);
 }
 
+.clarity:hover,
+.clarity:focus {
+  color: var(--color-accent);
+}
+
 /* --------------Alinement---------------- */
 
 .visually-hidden {
@@ -284,7 +335,6 @@ span {
 .portfolio-btn {
   border: 0px;
   padding: 6px 22px;
-  /* border: 2px solid transparent; */
   border-radius: 4px;
   font-family: "Roboto";
   font-weight: 500;
@@ -297,19 +347,6 @@ span {
 }
 .fbtn {
     padding: 6px 25px;
-    min-width: 73px;
-}
-.btn-item>.sbtn{
-min-width: 125px;
-}
-.tbtn {
-min-width: 112px;
-}
-.fobtn {
-min-width: 103px;
-}
-.fibtn {
-min-width: 130px;
 }
 
 .btn-item {
